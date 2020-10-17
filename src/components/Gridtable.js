@@ -191,7 +191,7 @@ export default function EnhancedTable() {
   const [rows, setRows] = useState([]);
   useEffect(() => {
     const getData = async () => {
-      const res = await axios.get('http://dummy.restapiexample.com/api/v1/employees');
+      const res = await axios.get('https://dummy.restapiexample.com/api/v1/employees');
       // console.log(res.data.data);
       setRows(res.data.data);
     }
@@ -262,7 +262,7 @@ export default function EnhancedTable() {
     let q = e.target.value;
     if(q===''){
       const getData = async () => {
-        const res = await axios.get('http://dummy.restapiexample.com/api/v1/employees');
+        const res = await axios.get('https://dummy.restapiexample.com/api/v1/employees');
         // console.log(res.data.data);
         setRows(res.data.data);
       }
