@@ -287,7 +287,7 @@ export default function EnhancedTable() {
 
   return (
     <div className={classes.root}>
-      <form style={{marginBottom: '1rem'}} noValidate autoComplete="off">
+      <form style={{marginBottom: '1rem'}} noValidate autoComplete="off" onSubmit={(e)=>(e.preventDefault())}>
         <TextField id="standard-basic" label="Search by name" onChange={onChangeHandler}/>
         {/* <TextField id="filled-basic" label="Filled" variant="filled" />
         <TextField id="outlined-basic" label="Outlined" variant="outlined" /> */}
